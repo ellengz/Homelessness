@@ -1,0 +1,227 @@
+fileFormatVersion: 2
+guid: 6140cb89032f748e9a5d4c785a5710e2
+timeCreated: 1475626985
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: otherHeadlines_0
+    21300002: otherHeadlines_1
+    21300004: otherHeadlines_2
+    21300006: otherHeadlines_3
+    21300008: otherHeadlines_4
+    21300010: otherHeadlines_5
+    21300012: otherHeadlines_6
+    21300014: otherHeadlines_7
+    21300016: otherHeadlines_8
+    21300018: otherHeadlines_9
+    21300020: otherHeadlines_10
+    21300022: otherHeadlines_11
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 150
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: otherHeadlines_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 899.25
+        width: 300.66666
+        height: 299.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: otherHeadlines_1
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 899.25
+        width: 300.66666
+        height: 299.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: otherHeadlines_2
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 899.25
+        width: 300.66666
+        height: 299.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: otherHeadlines_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600.25
+        width: 300.66666
+        height: 299.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: otherHeadlines_4
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 600.25
+        width: 300.66666
+        height: 299.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: otherHeadlines_5
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 600.25
+        width: 300.66666
+        height: 299.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: otherHeadlines_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 301.25
+        width: 300.66666
+        height: 299.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: otherHeadlines_7
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 301.25
+        width: 300.66666
+        height: 299.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: otherHeadlines_8
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 301.25
+        width: 300.66666
+        height: 299.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: otherHeadlines_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2.25
+        width: 300.66666
+        height: 299.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: otherHeadlines_10
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2.25
+        width: 300.66666
+        height: 299.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: otherHeadlines_11
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2.25
+        width: 300.66666
+        height: 299.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
