@@ -22,18 +22,17 @@ public class Street : MonoBehaviour {
 		GameObject npcPrefab = Resources.Load ("NPC") as GameObject;
 		string npcSex;
 		for (int i = 0; i < population; i++) {
-			// create NPCs at random locations
+			// create NPCs at random locations with random looks/sex
 			GameObject npcHair = new GameObject ();
 			npcHair.AddComponent<SpriteRenderer> ();
 			GameObject npcBody = new GameObject ();
 			npcBody.AddComponent<SpriteRenderer> ();
-			if (Random.Range (0, 2) == 0) {
-				npcSex = "girl";
-			} else {
-				npcSex = "boy";
-			}
+			// Random.Range(min, max) [min, max)
+			npcSex = Random.Range (0,2) == 0 ? "girl" : "boy";
 			npcHair.GetComponentInChildren<SpriteRenderer> ().sprite = Resources.Load<Sprite> (npcSex + "_head" + Random.Range (1, 4));
 			npcBody.GetComponentInChildren<SpriteRenderer> ().sprite = Resources.Load<Sprite> (npcSex + "_body" + Random.Range (1, 4));
+			// Quaternion.identity - no rotation
+			// this.transform - for assigning parent - the parent of npc is path
 			GameObject npc = (GameObject)Instantiate(npcPrefab, RandomStreetLocation(), Quaternion.identity, this.transform);
 			npcBody.transform.parent = npc.transform;
 			npcHair.transform.parent = npc.transform;
@@ -41,12 +40,6 @@ public class Street : MonoBehaviour {
 			npcBody.transform.localPosition = new Vector3 (0.3f, 0, -0.0002f);
 			npc.transform.localScale = new Vector3 (0.15f, 0.15f, 0.15f);
 			npc.SetActive (true);
-//			npcHair.GetComponentInChildren<SpriteRenderer> ().sortingOrder = 0;
-//			npcBody.GetComponentInChildren<SpriteRenderer> ().sortingOrder = 0;
-//			npc.GetComponentInChildren<SpriteRenderer> ().sortingOrder = 0;
-
-			//npcHair.transform.localScale = new Vector3 (0.1f,0.1f,0.1f);
-			//npcBody.transform.localScale = new Vector3 (0.1f,0.1f,0.1f);
 		}
 	}
 	
