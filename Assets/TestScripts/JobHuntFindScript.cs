@@ -16,14 +16,14 @@ public class JobHuntFindScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		foreach (var obj in GameObject.FindGameObjectsWithTag("Newspaper")) {
-			if (obj.transform.hasChanged) {
-				Debug.Log ("The transform has changed!");
-				throwing = true;
-			} else {
-				throwing = false;			
-			}
-		}
+//		foreach (var obj in GameObject.FindGameObjectsWithTag("Newspaper")) {
+//			if (obj.transform.hasChanged) {
+//				Debug.Log ("The transform has changed!");
+//				throwing = true;
+//			} else {
+//				throwing = false;			
+//			}
+//		}
 	}
 
 }

@@ -1,4 +1,4 @@
-{"gameName":"blanket game","unlocked":true,"finished":true,"highestScore":0}
-{"gameName":"job hunt game","unlocked":true,"finished":true,"highestScore":0}
-{"gameName":"food game","unlocked":false,"finished":false,"highestScore":0}
-{"x":-4.584397315979004,"y":-0.00000286102294921875,"z":1.6002204418182374}
+{"gameName":"blanket game","unlocked":false,"finished": false,"highestScore":0}
+{"gameName":"job hunt game","unlocked":false,"finished": false,"highestScore":0}
+{"gameName":"food game","unlocked":false,"finished": false,"highestScore":0}
+{"x":0,"y":0.0,"z":0}

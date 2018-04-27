@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class NPC : Interactive {
 	public Sprite[] sprites;
-	private static int count = 0;
+//	private static int count = 0;
 
 	public int id = 0;
 
