@@ -18,22 +18,21 @@ public class GenCar : MonoBehaviour {
 			timer -= Time.deltaTime;
 		if (timer < 0)
 			timer = 0;
-
 		if (timer == 0) {
 			timer = cooldown;
-			// generate car from left
+			Instantiate (car, this.transform, this.transform);
 			if (Random.value < chance) {
-				Instantiate (car);
-				car.transform.position = leftSpawn;
-				//OtherScript otherScript = GetComponent<OtherScript>();
-				car.GetComponent<Drive>().direction = 1;
+				if (2f * Random.value < chance) {
+					// generate car from left
+					car.transform.position = leftSpawn;
+					car.GetComponent<Drive> ().direction = 1;
+				} else {
+					// generate car from right
+					car.transform.position = rightSpawn;
+					car.GetComponent<Drive>().direction = -1;
+				}
 			}
-			// generate car from right
-			if (Random.value < chance) {
-				Instantiate (car);
-				car.transform.position = rightSpawn;
-				car.GetComponent<Drive>().direction = -1;
-			}
+
 		}
 	}
 }

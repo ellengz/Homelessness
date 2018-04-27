@@ -3,9 +3,10 @@ using System.Collections;
 
 public class Street : MonoBehaviour {
 	public int population;
+	public int balls;
 	public float yOffset;
 
-	public float minX, maxX, minY, maxY;
+	public float minY, maxY;
 
 	public float GetDepth(float y) {
 		return (y - minY) / (maxY - minY);
@@ -19,10 +20,10 @@ public class Street : MonoBehaviour {
 
 	void Start () {
 		DialogueBox.isOpen = false;
+		// create NPCs at random locations with random looks/sex
 		GameObject npcPrefab = Resources.Load ("NPC") as GameObject;
 		string npcSex;
 		for (int i = 0; i < population; i++) {
-			// create NPCs at random locations with random looks/sex
 			GameObject npcHair = new GameObject ();
 			npcHair.AddComponent<SpriteRenderer> ();
 			GameObject npcBody = new GameObject ();
@@ -41,11 +42,17 @@ public class Street : MonoBehaviour {
 			npc.transform.localScale = new Vector3 (0.15f, 0.15f, 0.15f);
 			npc.SetActive (true);
 		}
+		// create balls at random locations
+		GameObject ballPrefab = Resources.Load ("ball") as GameObject;
+		for (int i = 0; i < balls; i++) {
+			GameObject ball = (GameObject)Instantiate (ballPrefab, RandomStreetLocation() + new Vector3(0,0.9f,0), Quaternion.identity, this.transform);
+			ball.SetActive(true);
+		}
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+		
 	}
 
 	void OnMouseDown () {

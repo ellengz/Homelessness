@@ -29,7 +29,7 @@ Our team was tasked with creating a video game targeting children from 7-10 to e
 
 
 ## Development Environments
-Game engine and editor: **Unity 5.4**  
+Game engine and editor: **Unity 2017.3.1f1** *updated*
 Scripting language: **C#** 
 Development Operating Systems: 
 * **Windows 7 SP1+, 8, 10** 

@@ -19,6 +19,10 @@ public class Drive : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		transform.position += new Vector3 (velocity, 0, 0);
+		if (System.Math.Abs (2f * transform.position.x) < 52) {
+			transform.position += new Vector3 (velocity, 0, 0);
+		} else {
+			Destroy (gameObject);
+		}
 	}
 }
