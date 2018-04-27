@@ -35,3 +35,6 @@ sysinfo.txt
 
 # MacOS
 *.DS_Store
+
+# GameState
+gameState.txt
