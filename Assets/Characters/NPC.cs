@@ -19,19 +19,6 @@ public class NPC : Interactive {
 	
 	// Update is called once per frame
 	void Update () {
-//		SpriteRenderer[] children = gameObject.transform.GetComponentsInChildren<SpriteRenderer> ();
-//
-//		int order = (int)((-transform.position.z+10) * 1000);
-//		GetComponent<SpriteRenderer> ().sortingOrder = order;
-//
-//		foreach (SpriteRenderer spriterenderer in children) {
-//			order--;
-//			spriterenderer.sortingOrder = order;
-//		}
-//			GetComponentInChildren<SpriteRenderer> ().sortingOrder = 
-//		gameObject.GetComponentInChildren<GameObject>("npcBody").GetComponentInChildren<SpriteRenderer> ().sortingOrder = gameObject.transform.position.z;
-//		gameObject.GetComponentInChildren<GameObject>("npc").GetComponentInChildren<SpriteRenderer> ().sortingOrder = gameObject.transform.position.z;
-		
 	}
 
 	public override void Interact(GameObject other) {

@@ -23,18 +23,15 @@ public class Puzzle : MonoBehaviour {
 		size = (int)Mathf.Sqrt(sprites.Length);
 		pieces = new GameObject[sprites.Length];
 		float spread = 8;
+		GameObject puzzlePrefab = Resources.Load ("PuzzlePiece") as GameObject;
 
 		for (int y = 0; y < size; y++) {
 			for (int x = 0; x < size; x++) {
 				int index = size * x + y;
-				GameObject newPiece = new GameObject ();
+				GameObject newPiece = Instantiate(puzzlePrefab, new Vector3 (y-size/2, -x, 0), Quaternion.identity, this.transform);
 				newPiece.name = "puzzlepiece" + x.ToString () + '-' + y.ToString ();
-				newPiece.transform.parent = transform;
-				newPiece.transform.position = new Vector3 (y-size/2, -x, 0);
-
-				newPiece.AddComponent<BoxCollider2D> ();
-				newPiece.AddComponent<SpriteRenderer> ().sprite = sprites [index];
-				newPiece.AddComponent<PuzzlePiece> ().correctPosition = newPiece.transform.position;
+				newPiece.GetComponent<SpriteRenderer> ().sprite = sprites [index];
+				newPiece.GetComponent<PuzzlePiece> ().correctPosition = newPiece.transform.position;
 
 				pieces [index] = newPiece;
 			}
